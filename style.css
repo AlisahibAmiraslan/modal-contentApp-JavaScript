@@ -1,0 +1,128 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans|Roboto:400,700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  color: hsl(209, 61%, 16%);
+  user-select: none;
+}
+
+h1,
+h3{
+  letter-spacing: 0.25rem;
+  text-transform: capitalize;
+  margin-bottom: 0.75rem;
+  font-family: "Roboto", sans-serif;
+}
+
+h1 {
+  font-size: 3rem;
+}
+
+h3 {
+  font-size: 1.25rem;
+}
+
+p {
+  color: hsl(210, 22%, 49%);
+}
+
+.btn {
+  padding: 0.375rem 0.75rem;
+  display: inline-block;
+  transition: all 0.4s linear;
+  font-size: 1rem;
+  border: 2px solid #222;
+  cursor: pointer;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+  border-radius: 0.5rem;
+}
+
+.btn:hover {
+  color: #fff;
+  background: #222;
+}
+
+.container{
+  min-height: 100vh;
+  background: url("image/kız-kulesi.jpg") center/cover no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.banner {
+  background: rgba(255, 255, 255, 0.9);
+  padding: 4rem 0;
+  border-radius: 0.5rem;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  width: 90vw;
+  max-width: 620px;
+}
+
+.modal-btn {
+  margin-top: 2rem;
+  background: #49a6e9;
+  border-color: #49a6e9;
+  color: #fff;
+}
+
+.modal-btn:hover {
+  background: transparent;
+  color: #49a6e9;
+}
+
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(73, 166, 233, 0.5);
+  display: grid;
+  place-items: center;
+  transition: all 0.3s linear;
+  visibility: hidden;
+  z-index: -10;
+}
+
+.open-modal {
+  visibility: visible;
+  z-index: 10;
+}
+
+.modal-container {
+  background: #fff;
+  border-radius: 0.5rem;
+  width: 90vw;
+  height: auto;
+  padding: 20px 40px;
+  max-width: 620px;;
+  text-align: justify;
+  display: grid;
+  place-items: center;
+  position: relative;
+}
+
+.close-btn {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  font-size: 2rem;
+  background: transparent;
+  border-color: transparent;
+  color: hsl(360, 71%, 66%);
+  cursor: pointer;
+  transition: all 0.3s linear;
+}
+
+.close-btn:hover {
+  color: hsl(360, 71%, 66%);
+  transform: scale(1.3);
+}
